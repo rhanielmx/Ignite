@@ -1,0 +1,16 @@
+.tasks {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0;
+    width: 100%;
+    color: var(--gray-300);
+    gap: 8px;
+}
+
+.tasks img {
+    height: 3.5rem;
+}
