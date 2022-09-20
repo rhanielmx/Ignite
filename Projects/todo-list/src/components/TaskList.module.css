@@ -14,3 +14,57 @@
 .tasks img {
     height: 3.5rem;
 }
+
+.listItems {
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    align-self: stretch;
+    gap: 0.75rem;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    background: var(--gray-500);
+    border-radius: 8px;
+    color: var(--gray-100)
+}
+
+.listItemTextCompleted {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.listItemText {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.taskCheckbox {
+    background: none;
+    border: none;
+}
+
+
+.taskCheckbox:hover {
+    cursor: pointer;
+}
+
+.taskDeleteButton {
+    background: none;
+    border: none;
+    color: var(--gray-100);
+    padding: 0.25rem;
+}
+
+.taskDeleteButton:hover {
+    background: var(--gray-400);
+    color: var(--danger);
+    border-radius: 8px;
+}
