@@ -14,6 +14,8 @@ export const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme.background};
     color: ${(props) => props.theme['base-text']};
     -webkit-font-smoothing: antialiased;
+    /* overflow: hidden; Hide scrollbars */
+
  }
  body, input, textArea, button {
     font-family: 'Roboto', sans-serif ;

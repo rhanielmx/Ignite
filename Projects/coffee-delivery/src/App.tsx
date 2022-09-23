@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
+import { Intro } from './components/Intro'
 import { Navbar } from './components/Navbar'
 
 import { GlobalStyle } from './styles/global'
@@ -11,6 +12,7 @@ function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Navbar />
+      <Intro />
       <GlobalStyle />
     </ThemeProvider>
   )

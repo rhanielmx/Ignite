@@ -7,6 +7,13 @@ export const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     padding: 2rem 10rem;
+
+    background-color: ${(props) => props.theme.background};
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
 `
 export const ActionsContainer = styled.div`
     display: flex;
@@ -59,5 +66,4 @@ export const CartContainer = styled.div<CartContainerProps>`
     }
     `
     }
-    
 `
