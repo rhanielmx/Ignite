@@ -1,6 +1,6 @@
 # Coffe Delivery
 
-Projeto realizado como desafio do módulo 2 do bootcamp Ignite da Rocketseat, possui as funcionalidades exigidas para praticar o conteúdo aprendido no módulo e alguns acréscimos que eu resolvi adicionar para dar um toque pessoal no projeto. Criado com React + Vite e Typescript
+Projeto realizado como desafio do módulo 2 do bootcamp Ignite da Rocketseat, possui as funcionalidades exigidas para praticar o conteúdo aprendido no módulo e alguns acréscimos que eu resolvi adicionar para dar um toque pessoal no projeto. Criado com React + Vite, Typescript e Styled-Components 
 
 <!-- ##Tecnologias Utilizadas
 <ul>
