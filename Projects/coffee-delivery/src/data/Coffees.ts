@@ -1,0 +1,16 @@
+export const COFFEES = [
+    { name:"Expresso Tradicional", description: "O tradicional café feito com água quente e grãos moídos", price: 9.90, tags:['tradicional'], imageUrl: "tradicional.png" },
+    { name:"Expresso Americano", description: "Expresso diluído, menos intenso que o tradicional", price: 9.90, tags:['tradicional'], imageUrl: "americano.png" },
+    { name:"Expresso Cremoso", description: "Café expresso tradicional com espuma cremosa", price: 9.90, tags:['tradicional'], imageUrl: "cremoso.png" },
+    { name:"Expresso Gelado", description: "Bebida preparada com café expresso e cubos de gelo", price: 9.90, tags:['tradicional', 'gelado'], imageUrl: "gelado.png" },
+    { name:"Café com Leite", description: "Meio a meio de expresso tradicional com leite vaporizado", price: 9.90, tags:['tradicional', 'com leite'], imageUrl: "cafe-com-leite.png" },
+    { name:"Latte", description: "Uma dose de café expresso com o dobro de leite e espuma cremosa", price: 9.90, tags:['tradicional', 'com leite'], imageUrl: "latte.png" },
+    { name:"Capuccino", description: "Bebida com canela feita de doses iguais de café, leite e espuma", price: 9.90, tags:['tradicional', 'com leite'], imageUrl: "capuccino.png" },
+    { name:"Macchiato", description: "Café expresso misturado com um pouco de leite quente e espuma", price: 9.90, tags:['tradicional', 'com leite'], imageUrl: "macchiato.png" },
+    { name:"Mocaccino", description: "Café expresso com calda de chocolate, pouco leite e espuma", price: 9.90, tags:['tradicional', 'com leite'], imageUrl: "mocaccino.png" },
+    { name:"Chocolate Quente", description: "Bebida feita com chocolate dissolvido no leite quente e café", price: 9.90, tags:['especial', 'com leite'], imageUrl: "chocolate-quente.png" },
+    { name:"Cubano", description: "Drink gelado de café expresso com rum, creme de leite e hortelã", price: 9.90, tags:['especial', 'alcoólico', 'gelado'], imageUrl: "cubano.png" },
+    { name:"Havaiano", description: "Bebida adocicada preparada com café e leite de coco", price: 9.90, tags:['especial'], imageUrl: "havaiano.png" },
+    { name:"Árabe", description: "Bebida preparada com grãos de café árabe e especiarias", price: 9.90, tags:['especial'], imageUrl: "arabe.png" },
+    { name:"Irlandês", description: "Bebida a base de café, uísque irlandês, açúcar e chantilly", price: 9.90, tags:['especial', 'alcoólico'], imageUrl: "irlandes.png" },
+]
