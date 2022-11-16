@@ -1,7 +1,7 @@
 import { useState } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
-import { Intro } from './components/Intro'
-import { Navbar } from './components/Navbar'
+import { Router } from './Router'
 
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
@@ -11,8 +11,11 @@ function App() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Navbar />
-      <Intro />
+      <BrowserRouter>
+        {/* <CyclesContextProvider> */}
+          <Router />
+        {/* </CyclesContextProvider> */}
+      </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
   )

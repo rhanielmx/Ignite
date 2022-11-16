@@ -1,13 +1,9 @@
-import { CoffeeDisplay, CoffeeDisplayItems, CoffeeDisplayTitle, IntroContainer, IntroInfoContainer, IntroInfoSubtitle, IntroInfoTitle, ItemsContainer, ItemsContainerIcon, ItemsContainerItem, Wrapper } from "./styles";
-import introBackground from '../../assets/intro-background.svg'
-import introCoffee from '../../assets/intro-coffee.svg'
+import { IntroContainer, IntroInfoContainer, IntroInfoSubtitle, IntroInfoTitle, ItemsContainer, ItemsContainerIcon, ItemsContainerItem, Wrapper } from "./styles";
+import introCoffee from '../../../../assets/intro-coffee.svg'
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
-import { CoffeeCard } from "../CoffeeCard";
-import { COFFEES } from "../../data/Coffees";
 
 export function Intro() {
     return (
-        <Wrapper imageUrl={introBackground}>
             <IntroContainer >
                 <IntroInfoContainer>
                     <IntroInfoTitle>Encontre o café perfeito para qualquer hora do dia</IntroInfoTitle>
@@ -41,14 +37,5 @@ export function Intro() {
                 </IntroInfoContainer>
                 <img src={introCoffee}></img>
             </IntroContainer>
-            <CoffeeDisplay>
-                <CoffeeDisplayTitle>Nossos Cafés</CoffeeDisplayTitle>
-                <CoffeeDisplayItems>
-                    {COFFEES.map(coffee => {
-                        return <CoffeeCard name={coffee.name} description={coffee.description} price={coffee.price} tags={coffee.tags} imageUrl={coffee.imageUrl} />
-                    })}
-                </CoffeeDisplayItems>
-            </CoffeeDisplay>
-        </Wrapper>
     )
 }
