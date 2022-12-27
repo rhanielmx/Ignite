@@ -38,5 +38,6 @@ Projeto realizado como desafio do módulo 2 do bootcamp Ignite da Rocketseat, po
 ;
 cd Ignite
 git sparse-checkout set Projects/coffee-delivery
- npm i 
+cd Projects/coffee-delivery
+npm i 
  ```
