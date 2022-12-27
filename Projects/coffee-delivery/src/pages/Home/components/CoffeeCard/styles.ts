@@ -85,12 +85,15 @@ export const CoffeeCardOptionsButtonsStyled = styled.div`
 export const CoffeeCardOptionsQuantityStyled = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
     font-family: 'Roboto';
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.3;
     gap: 0.25rem;
-    padding: 0 0.25rem;
+    padding: 0.5rem;
     border-radius: 0.25rem;
     color: ${(props) => props.theme['base-title']};
     background-color: ${(props) => props.theme['base-button']};
@@ -101,14 +104,22 @@ export const CoffeeCardOptionsQuantityStyled = styled.div`
     }
 `
 
-export const CoffeeCardOptionsCartButtontyled = styled.div`
+export const CoffeeCardOptionsCartButtontyled = styled('button')<{ primary?: boolean }>`
     display: flex;
-    border-radius: 0.25rem;
-    padding: 0.25rem;
-    background-color: ${(props) => props.theme['purple-dark']};
+    align-items: center;
+    height: 100%;
+    gap: 0.25rem;
+    border-radius: 0.25rem; 
+    padding: ${(props)=> props.primary ?  '0.25rem' : '0.5rem'};;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    background-color: ${(props) => (
+        props.primary ? props.theme['purple-dark'] : props.theme['base-button']
+    )};
 
     &:hover{
         cursor: pointer;
     }
-
-`
+`   

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
+import { OrdersContext, OrdersProvider } from './contexts/OrdersContext'
 import { Router } from './Router'
 
 import { GlobalStyle } from './styles/global'
@@ -10,14 +11,14 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <BrowserRouter>
-        {/* <CyclesContextProvider> */}
+    <OrdersProvider>
+      <ThemeProvider theme={defaultTheme}>
+        <BrowserRouter>
           <Router />
-        {/* </CyclesContextProvider> */}
-      </BrowserRouter>
-      <GlobalStyle />
-    </ThemeProvider>
+        </BrowserRouter>
+        <GlobalStyle />
+      </ThemeProvider>
+    </OrdersProvider>
   )
 }
 

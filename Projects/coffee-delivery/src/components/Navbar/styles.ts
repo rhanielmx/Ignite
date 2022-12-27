@@ -13,6 +13,10 @@ export const NavContainer = styled.nav`
     top: 0;
     left: 0;
     z-index: 1;
+
+    img:hover {
+        cursor: pointer;
+    }
     
 `
 export const ActionsContainer = styled.div`
@@ -34,7 +38,7 @@ type CartContainerProps = {
     numberOfNotifications?: number
 }
 
-export const CartContainer = styled.div<CartContainerProps>`
+export const CartContainer = styled.a<CartContainerProps>`
     padding: 0.5rem;
     border-radius: 8px;
 
