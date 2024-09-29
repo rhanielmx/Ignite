@@ -12,25 +12,24 @@ interface CreateQuestionUseCaseResponse {
   question: Question
 }
 
-
 export class CreateQuestionUseCase {
   constructor(private questionsRepository: QuestionsRepository) {}
 
   async execute({
     authorId,
     title,
-    content
-  }: CreateQuestionUseCaseRequest) : Promise<CreateQuestionUseCaseResponse> {
+    content,
+  }: CreateQuestionUseCaseRequest): Promise<CreateQuestionUseCaseResponse> {
     const question = Question.create({
       authorId: new UniqueEntityID(authorId),
       title,
-      content
+      content,
     })
 
     this.questionsRepository.create(question)
 
     return {
-      question
+      question,
     }
   }
 }
