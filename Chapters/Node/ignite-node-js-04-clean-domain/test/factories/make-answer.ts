@@ -3,7 +3,7 @@ import { Answer, AnswerProps } from '@/domain/forum/enterprise/entities/answer'
 import { faker } from '@faker-js/faker'
 
 export function makeAnswer(
-  ovveride: Partial<AnswerProps> = {},
+  override: Partial<AnswerProps> = {},
   id?: UniqueEntityID,
 ) {
   const answer = Answer.create(
@@ -11,7 +11,7 @@ export function makeAnswer(
       authorId: new UniqueEntityID(),
       questionId: new UniqueEntityID(),
       content: faker.lorem.text(),
-      ...ovveride,
+      ...override,
     },
     id,
   )

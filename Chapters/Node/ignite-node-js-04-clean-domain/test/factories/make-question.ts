@@ -6,7 +6,7 @@ import {
 import { faker } from '@faker-js/faker'
 
 export function makeQuestion(
-  ovveride: Partial<QuestionProps> = {},
+  override: Partial<QuestionProps> = {},
   id?: UniqueEntityID,
 ) {
   const question = Question.create(
@@ -14,7 +14,7 @@ export function makeQuestion(
       authorId: new UniqueEntityID(),
       title: faker.lorem.sentence(),
       content: faker.lorem.text(),
-      ...ovveride,
+      ...override,
     },
     id,
   )

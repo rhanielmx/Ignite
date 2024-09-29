@@ -6,7 +6,7 @@ import {
 import { faker } from '@faker-js/faker'
 
 export function makeAnswerComment(
-  ovveride: Partial<AnswerCommentProps> = {},
+  override: Partial<AnswerCommentProps> = {},
   id?: UniqueEntityID,
 ) {
   const answerComment = AnswerComment.create(
@@ -14,7 +14,7 @@ export function makeAnswerComment(
       authorId: new UniqueEntityID(),
       answerId: new UniqueEntityID(),
       content: faker.lorem.text(),
-      ...ovveride,
+      ...override,
     },
     id,
   )
