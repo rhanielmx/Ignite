@@ -11,19 +11,20 @@ describe('Get Question By Slug', () => {
     inMemoryQuestionsRepository = new InMemoryQuestionsRepository()
     sut = new GetQuestionBySlugUseCase(inMemoryQuestionsRepository)
   })
-  it('should be able to get a question by slug', async () => {
+  it.only('should be able to get a question by slug', async () => {
     const newQuestion = makeQuestion({
       slug: Slug.create('new-question'),
     })
 
     await inMemoryQuestionsRepository.create(newQuestion)
 
-    const { question } = await sut.execute({
+    const result = await sut.execute({
       slug: 'new-question',
     })
 
-    expect(question.id).toBeTruthy()
-    expect(inMemoryQuestionsRepository.items[0].id).toEqual(question.id)
-    expect(question.title).toEqual(newQuestion.title)
+
+    expect(result.isRight()).toBe(true)
+    expect(inMemoryQuestionsRepository.items[0].id).toEqual(result.value.question.id)
+    expect(result.value.question.title).toEqual(newQuestion.title)
   })
 })

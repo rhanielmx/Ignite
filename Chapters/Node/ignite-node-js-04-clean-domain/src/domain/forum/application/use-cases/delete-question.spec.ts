@@ -48,6 +48,6 @@ describe('Delete Question', () => {
     })
 
     expect(result.isLeft()).toBe(true)
-    expect(result.value).toBeInstanceOf(ResourceNotFoundError)
+    expect(result.value).toBeInstanceOf(NotAllowedError)
   })
 })
